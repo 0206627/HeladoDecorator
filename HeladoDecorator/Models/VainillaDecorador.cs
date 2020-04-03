@@ -1,10 +1,12 @@
 ﻿using System;
 namespace HeladoDecorator.Models
 {
-    public class VainillaDecorador
+    public class VainillaDecorador : IngredienteDecorador
     {
-        public VainillaDecorador()
+        public VainillaDecorador(IHelado helado) : base(helado)
         {
+            _nombre = "Vainilla";
+            _precio = 7.00;
         }
     }
 }

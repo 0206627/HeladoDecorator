@@ -1,10 +1,12 @@
 ﻿using System;
 namespace HeladoDecorator.Models
 {
-    public class ChocolateDecorador
+    public class ChocolateDecorador : IngredienteDecorador
     {
-        public ChocolateDecorador()
+        public ChocolateDecorador(IHelado helado) : base(helado)
         {
+            _nombre = "Chocolate";
+            _precio = 8.00;
         }
     }
 }
